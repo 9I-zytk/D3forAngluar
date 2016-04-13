@@ -7,10 +7,8 @@ function getEntry() {
     var entry = {};
     glob.sync(__dirname + '/public/**/*.main.js').forEach(function (name) {
         var n = name.match(/([^/]+?)\.main\.js/)[1];
-
         entry[n] = './' + n + '.main.js';
     });
-
     return entry;
 }
 

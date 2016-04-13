@@ -97,6 +97,6 @@
     "requirejs": "latest",
     "supertest": "latest",
     "through": "latest",
-	"run-sequence":"run-sequence"
+	"run-sequence":"latest"
   }
 }

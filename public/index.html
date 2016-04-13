@@ -74,15 +74,18 @@
 </div>
 
 
-<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script>-->
 
 <!-- build:js scripts/vendor.js -->
 <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/angular-aria/angular-aria.js"></script>
 <script src="../bower_components/angular-animate/angular-animate.min.js"></script>
-<script src="../bower_components/angular-aria/angular-aria.min.js"></script>
 <script src="../bower_components/angular-messages/angular-messages.min.js"></script>
 <script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="../bower_components/angular-material/angular-material.js"></script>
+<script src="../bower_components/angular-translate/angular-translate.js"></script>
+<script src="../bower_components/d3/d3.js"></script>
 <!-- endbuild -->
 
 
@@ -92,7 +95,13 @@
 
 <!-- build:js scripts/app.js -->
 <!-- inject:js -->
-
+<script src="app/app.js"></script>
+<script src="app/app.config.js"></script>
+<script src="app/app.route.js"></script>
+<script src="diretive/layout.diretive.js"></script>
+<script src="controller/appCtrl.js"></script>
+<script src="app/loader.js"></script>
+<script src="controller/dashboardCtrl.js"></script>
 <!-- endinject -->
 <!-- build:js scripts/app.js -->
 </body>
