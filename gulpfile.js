@@ -14,8 +14,8 @@ var configs = {
 	sass: 'public/assets/sass/**/*.scss',
 	css:'public/**/*.css',
     html: ['public/index.html',
-        'public/views/**/*.html',
-        'public/layout/*.html',
+        'public/views/*.html',
+        'public/layout/*.html'
         ],
     assets: [
         'public/assets/fonts/**/*',
