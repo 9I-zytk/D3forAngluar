@@ -17,6 +17,7 @@
     "angular-translate":"latest",
     "material-design-iconic-font": "latest",
     "d3": "latest",
+    "lodash": "latest",
     "angular-animate":"latest"
   }
 }

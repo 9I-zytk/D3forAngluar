@@ -1,10 +1,14 @@
 'use strict';
 angular.module('app.core')
-    .controller('AppCtrl', [ '$scope', '$rootScope', '$state', '$document', 'appConfig', function ($scope, $rootScope, $state, $document, appConfig) {
+    .controller('AppCtrl', [ '$scope', '$rootScope', '$state', '$document', 'appConfig','appMenu', function ($scope, $rootScope, $state, $document, appConfig,appMenu) {
 
     $scope.pageTransitionOpts = appConfig.pageTransitionOpts;
     $scope.main = appConfig.main;
     $scope.color = appConfig.color;
+    $scope.core= appMenu.core;
+    $scope.scales=appMenu.scales;
+    $scope.SVG=appMenu.SVG;
+    $scope.layout=appMenu.layout;
 
     $scope.$watch('main', function(newVal, oldVal) {
         // if (newVal.menu !== oldVal.menu || newVal.layout !== oldVal.layout) {

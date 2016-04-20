@@ -49,6 +49,78 @@ angular.module('app.core')
             color: color
         }
     }])
+    .factory('appMenu',[function(){
+        //var coreMenu=[
+        //    {
+        //        route:'core/Selections',
+        //        name:'选择器',
+        //        herf:'#/core/Selections',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/transition',
+        //        name:'过渡',
+        //        herf:'#/core/transition',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/Arrays',
+        //        name:'数组操作',
+        //        herf:'#/core/Arrays',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/color',
+        //        name:'颜色',
+        //        herf:'#/core/color',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/scale',
+        //        name:'比例尺',
+        //        herf:'#/core/scale',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/Math',
+        //        name:'Math',
+        //        herf:'#/core/Math',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/Request',
+        //        name:'数据请求',
+        //        herf:'#/core/Request',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/Formatting',
+        //        name:'格式化',
+        //        herf:'#/core/Formatting',
+        //        iconClass:''
+        //    },
+        //    {
+        //        route:'core/others',
+        //        name:'其他',
+        //        herf:'#/core/others',
+        //        iconClass:''
+        //    }
+        //];
+        //var core={
+        //    route:'core',
+        //    name:'核心',
+        //    herf:'#/core',
+        //    iconClass:'zmdi zmdi-flag',
+        //    menu:coreMenu
+        //};
+        return{
+            core:core,
+            SVG:SVG,
+            scales:scales,
+            layout:layout
+        }
+
+    }])
     .config(['$mdThemingProvider', function ($mdThemingProvider) {
         var cyanAlt = $mdThemingProvider.extendPalette('cyan', {
             'contrastLightColors': '500 600 700 800 900',
